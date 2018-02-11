@@ -6,6 +6,41 @@
 			{
 				background-color: #ccffff;
 			}
+			#top
+			{
+				text-align: center;
+				height: 15%;
+				margin: 1%;
+/*				position: fixed;
+				left: 40%;
+*/			}
+			#left
+			{
+				position: absolute;
+				left: 1%;
+				top: 1%;
+				width: 15%;	
+			}
+			#center
+			{
+				position: absolute;
+				background-color: #99ffcc;
+				top: 15%;
+				left: 15%;
+				right: 15%;
+				height: 50%;
+				border: solid 1px;
+				padding-left: 1%;
+				padding-right: 1%;
+				margin: 2%;				
+			}
+			#right
+			{
+				position: absolute;
+				right: 1%;
+				top: 1%;
+				width: 15%;
+			}
 			h2
 			{
 				text-decoration: underline;
@@ -15,45 +50,54 @@
 				font-weight: 200;
 				color: gray;
 			}
-			#aboutme
-			{	
-				float: right;	
-			}
-			img
+			.img1
 			{
-				height: 20px;
-				width: 25px;
+				height: 8%;
+				width: 100%;
 			}
-			#t1
+			.img2
 			{
-				color: #0000AA;
-				padding: 5px;
-				border-spacing: 10px;
+				margin-left: 25%;
+				padding: 2%;
+				height: 10%;
+				width: 40%;
+			}
+			.img2:hover
+			{
+				opacity: 0.5;
 			}
 			#me
 			{
-				height: 200px;
-				width: 150px;
-				position: absolute;
-				left: 10px;
-				top: 10px;
+				height: 40%;
+				width: 100%;
 			}
-			#details
+			.contact
 			{
-				position: absolute;
-				background-color: #99ffcc;
-				top: 15%;
-				left: 15%;
-				right: 18%;
-				height: 50%;
-				border: solid 1px;
-				padding: 5px;
+				/*width: 100%;*/
+				/*outline: solid;*/
 			}
-			#t2
+			.contact h3
+			{
+				text-align: center;
+				color: rgb(102,51,0);
+			}
+			.contact table
+			{
+				color: #0000AA;
+				/*padding: 1%;*/
+				border-spacing: 10px;
+				/*width: 100%;*/
+			}
+			.contact td a
+			{
+				text-decoration: none;
+				color: inherit;
+			}
+			#education table
 			{
 				width: 100%;
 			}
-			#details td
+			#education td
 			{
 				text-align: center;
 			}
@@ -64,34 +108,58 @@
 		</style>
 	</head>
 	<body>
-		<center>
+
+		<!-- top -->
+		<div id="top">
 			<h2>SAWARNEE SETHI</h2>
 			<h3 id="desg">Full Stack Web Developer</h3>
-		</center>
-		<img src="me.jpg" id="me">
-		<div id="aboutme">
-			<table id="t1">
-				<tr>
-					<td><img src="email.ico"></td>
-					<td>xyzabc123@gmail.com</td>
-				</tr>
-				<tr>
-					<td><img src="address.png"></td>
-					<td>xyz, Rohini</td>					
-				</tr>
-				<tr>
-					<td><img src="phone.png"></td>
-					<td>9372093893</td>					
-				</tr>
-			</table>
-			<div id="details">
+		</div>
+
+		<!-- left -->
+		<div id="left">
+			<img src="me.jpg" id="me">
+			<!-- <div id="aboutme">
+				I am a learner and I always will be a leaner. I try to learn different things. I don't think any thing is enough or sufficient for me. If there is nothing more to learn in a subject, I would just pick a new subject and try to expertise it. I am good in software and web development and have made many projects using different technologies. Apart from the development, I am also good in communication (spoken and written). I am good in representing something effectively and also love to take part in challenges and hackathons. I love to participate in different contests and winning or losing does not bother me as long as I tried my best. I also possess good leadership qualities and I have also led my college team in many projects. I want to be an entrepreneur and I think that work exposure and experience gained during this time will help me a lot to achieve my dream.
+			</div> -->
+		</div>	
+
+		<!-- right -->
+		<div id="right">
+			<div class="contact">
+				<h3>CONTACT</h3>
+				<table>
+					<tr>
+						<td><img src="email.ico" class="img1"></td>
+						<td>sawarnee1997@gmail.com</td>
+					</tr>
+					<tr>
+						<td><img src="address.png" class="img1"></td>
+						<td>1227, Rani Bagh</td>					
+					</tr>
+					<tr>
+						<td><img src="phone.png" class="img1"></td>
+						<td>7042725575</td>					
+					</tr>
+				</table>
+			</div>
+			<div class="contact">
+				<h3>QUICK LINKS</h3>
+				<a href="https://www.linkedin.com/in/sawarneesethi" target="_blank"><img src="linkedin.png" class="img2"></a>
+				<a href="https://github.com/sawarnee" target="_blank"><img src="github.png" class="img2"></a>
+				<a href="https://www.getboarded.com/e/Sawarnee-1514963475-1173" target="_blank"><img src="getboarded.jpg" class="img2"></a>
+			</div>
+		</div>
+
+		<!-- center -->
+		<div id="center">
+			<div id="education">
 				<h3>EDUCATION : </h3>
-				<table border="1" id="t2"> 
+				<table border="1"> 
 					<tr>
 						<th>Class / Degree</th>
 						<th>Institution</th>
 						<th>Board of Examination</th>
-						<th>Percentage</th>				
+						<th>Percentage/Grade</th>				
 					</tr>
 					<tr>
 						<td>10th</td>
@@ -109,14 +177,17 @@
 						<td>B.Tech</td>
 						<td>Bhagwan Parshuram Institute of Technology</td>
 						<td>GGSIPU</td>
-						<td>81.8</td>
+						<td>82 %</td>
 					</tr>
 				</table>
+			</div>
+			<div id="experience">
 				<h3>EXPERIENCE : </h3>
 				<ul>
 					<li>Front End Developer and Code Reviewer at Arbunize - <span class="date ">21st December to present</span></li>
 				</ul>
 			</div>
-		<div>
+		</div>
+
 	</body>
 </html>
