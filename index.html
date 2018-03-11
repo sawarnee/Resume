@@ -1,6 +1,14 @@
 <html>
 	<head>
 		<title>RESUME</title>
+
+		<script type="text/javascript">
+			function showeducation()
+			{
+				document.getElementById('educationtable').style.display = "block";
+			}
+		</script>
+
 		<style>
 			body
 			{
@@ -19,7 +27,7 @@
 				position: absolute;
 				left: 1%;
 				top: 1%;
-				width: 15%;	
+				width: 15%;
 			}
 			#center
 			{
@@ -28,7 +36,7 @@
 				top: 15%;
 				left: 15%;
 				right: 15%;
-				height: 50%;
+				height: 80%;
 				border: solid 1px;
 				padding-left: 1%;
 				padding-right: 1%;
@@ -41,7 +49,7 @@
 				top: 1%;
 				width: 15%;
 			}
-			h2
+			#top h2
 			{
 				text-decoration: underline;
 			}
@@ -52,8 +60,10 @@
 			}
 			.img1
 			{
-				height: 8%;
-				width: 100%;
+/*				height: 8%;
+				width: 10%;
+*/				height: 20px;
+				width: 25px;
 			}
 			.img2
 			{
@@ -93,17 +103,23 @@
 				text-decoration: none;
 				color: inherit;
 			}
-			#education table
+			#educationtable
 			{
+				/*display: none;*/
 				width: 100%;
+				background-color: #ccffe6;
 			}
-			#education td
+			#educationtable td
 			{
 				text-align: center;
 			}
 			.date
 			{
 				color: gray;
+			}
+			#center h3
+			{
+				cursor: pointer;
 			}
 		</style>
 	</head>
@@ -121,40 +137,13 @@
 			<!-- <div id="aboutme">
 				I am a learner and I always will be a leaner. I try to learn different things. I don't think any thing is enough or sufficient for me. If there is nothing more to learn in a subject, I would just pick a new subject and try to expertise it. I am good in software and web development and have made many projects using different technologies. Apart from the development, I am also good in communication (spoken and written). I am good in representing something effectively and also love to take part in challenges and hackathons. I love to participate in different contests and winning or losing does not bother me as long as I tried my best. I also possess good leadership qualities and I have also led my college team in many projects. I want to be an entrepreneur and I think that work exposure and experience gained during this time will help me a lot to achieve my dream.
 			</div> -->
-		</div>	
-
-		<!-- right -->
-		<div id="right">
-			<div class="contact">
-				<h3>CONTACT</h3>
-				<table>
-					<tr>
-						<td><img src="email.ico" class="img1"></td>
-						<td>sawarnee1997@gmail.com</td>
-					</tr>
-					<tr>
-						<td><img src="address.png" class="img1"></td>
-						<td>1227, Rani Bagh</td>					
-					</tr>
-					<tr>
-						<td><img src="phone.png" class="img1"></td>
-						<td>7042725575</td>					
-					</tr>
-				</table>
-			</div>
-			<div class="contact">
-				<h3>QUICK LINKS</h3>
-				<a href="https://www.linkedin.com/in/sawarneesethi" target="_blank"><img src="linkedin.png" class="img2"></a>
-				<a href="https://github.com/sawarnee" target="_blank"><img src="github.png" class="img2"></a>
-				<a href="https://www.getboarded.com/e/Sawarnee-1514963475-1173" target="_blank"><img src="getboarded.jpg" class="img2"></a>
-			</div>
 		</div>
 
 		<!-- center -->
 		<div id="center">
 			<div id="education">
 				<h3>EDUCATION : </h3>
-				<table border="1"> 
+				<table border="1" id="educationtable"> 
 					<tr>
 						<th>Class / Degree</th>
 						<th>Institution</th>
@@ -187,7 +176,46 @@
 					<li>Front End Developer and Code Reviewer at Arbunize - <span class="date ">21st December to present</span></li>
 				</ul>
 			</div>
+			<div id="project">
+				<h3>PROJECTS : </h3>
+				<ul>
+					<li>Online Registration System - <a href="https://github.com/sawarnee/OnlineRegistrationSystem" target="_blank">github link</a></li>
+					<li>Basic Sign up - Login Web Application - <a href="https://github.com/sawarnee/signup_login_application" target="_blank">github link</a></li>
+				</ul>
+			</div>
 		</div>
+
+		<!-- right -->
+		<div id="right">
+			<div class="contact">
+				<h3>CONTACT</h3>
+				<table>
+					<tr>
+						<td><img src="email.ico" class="img1"></td>
+						<td>sawarnee1997@gmail.com</td>
+					</tr>
+					<tr>
+						<td><img src="address.png" class="img1"></td>
+						<td>1227, Rani Bagh, Delhi</td>					
+					</tr>
+					<tr>
+						<td><img src="phone.png" class="img1"></td>
+						<td>7042725575</td>					
+					</tr>
+				</table>
+			</div>
+			<div class="contact">
+				<h3>QUICK LINKS</h3>
+				<a href="https://www.linkedin.com/in/sawarneesethi" target="_blank"><img src="linkedin.png" class="img2"></a>
+				<a href="https://github.com/sawarnee" target="_blank"><img src="github.png" class="img2"></a>
+				<a href="https://www.getboarded.com/e/Sawarnee-1514963475-1173" target="_blank"><img src="getboarded.jpg" class="img2"></a>
+			</div>
+		</div>
+
+
+
+
+
 
 	</body>
 </html>
